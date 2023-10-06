@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="assets/style.css">
+ <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+
+ <title>Teste</title>
+</head>
+<body>
+ <div class="bg-fundo">
+   <div class="quiz">
+   <div class="swiper mySwiper">
+    <form action ="resposta.php" method="post" id="form" class="swiper-wrapper">
+      <div id="question1" class="swiper-slide conteudo"> 
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Costumo ir a eventos, festas ou cursos, mesmo sem ter muita vontade, para agradar meu chefe meus amigos ou família. </h2>
+          </div>
+          <div class="options">
+              <div class="caption text--positivo">Sempre</div>
+              <div class="radios">
+                  <label class="t-opcoes" for="um-um">
+                    <input 
+                    aria-label="I strongly agree" 
+                    aria-busy="false" 
+                    id="um-um" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="-3" >
+                    <span class="radio-style size70 positivo "> </span>
+                  </label>
+                  <label class="t-opcoes" for="um-dois">
+                    <input 
+                    aria-label="I moderately agree" 
+                    aria-busy="false" 
+                    id="um-dois" 
+                    class="alt" 
+                    name="alt1"  
+                    type="radio" 
+                    tabindex="-1" 
+                    value="-2" >
+                    <span class="radio-style size56 positivo ">  </span>
+                  </label>
+                  <label class="t-opcoes" for="um-tres">
+                    <input 
+                    aria-label="I agree" 
+                    aria-busy="false" 
+                    id="um-tres" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="-1" >
+                    <span class="radio-style size46 positivo "></span>
+                  </label>
+                  <label class="t-opcoes" for="um-quatro">
+                    <input  
+                    aria-label="I am not sure" 
+                    aria-busy="false" 
+                    data-focus-first="true" 
+                    id="um-quatro" 
+                    class="alt" 
+                    name="alt1"  
+                    type="radio" 
+                    tabindex="0" 
+                    value="0"  >
+                    <span class="radio-style size36 neutro" >  </span>
+                  </label>
+                  <label class="t-opcoes" for="um-cinco">
+                    <input 
+                    aria-label="I disagree" 
+                    aria-busy="false" 
+                    id="um-cinco" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="1" >
+                    <span class="radio-style size46 negativo" >  </span>
+                  </label>
+                  <label class="t-opcoes" for="um-seis">
+                    <input 
+                    aria-label="I moderately disagree" 
+                    aria-busy="false" 
+                    id="um-seis" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="2" >
+                    <span class="radio-style size56 negativo" ></span>
+                  </label>
+                  <label class="t-opcoes" for="um-sete">
+                    <input  
+                    aria-label="I strongly disagree" 
+                    aria-busy="false" 
+                    id="um-sete" 
+                    class="alt" 
+                    name="alt1" 
+                    type="radio" 
+                    tabindex="-1" 
+                    value="3"  
+                    required="">
+                    <span class="radio-style size70 negativo" > </span>
+                  </label>
+              </div>
+              <div class="caption  text--negativo">Nunca</div>
+              <div class="mobile">
+                <div class="caption-mobile text--positivo">
+                Sempre</div>
+                <div class="caption-mobile  text--negativo">
+                Nunca</div> 
+              </div>
+          </div>
+      </div>
+      <div id="question2" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Não consigo realizar tudo que me propus fazer no dia e preciso fazer hora extra e levar trabalho para casa  Costumo ir a eventos, festas ou cursos, mesmo sem ter muita vontade, para agradar meu chefe meus amigos ou família. </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="dois-um">
+              <input 
+              aria-label="I strongly agree" 
+              aria-busy="false" 
+              id="dois-um" 
+              class="alt" 
+              name="alt2" 
+              type="radio" 
+              tabindex="-1" 
+              value="-3" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="dois-dois">
+              <input 
+              aria-label="I moderately agree" 
+              aria-busy="false" 
+              id="dois-dois" 
+              class="alt" 
+              name="alt2"  
+              type="radio" 
+              tabindex="-1" 
+              value="-2" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="dois-tres">
+              <input 
+              aria-label="I agree" 
+              aria-busy="false" 
+              id="dois-tres" 
+              class="alt" 
+              name="alt2" 
+              type="radio" 
+              tabindex="-1" 
+              value="-1" >
+              <span class="radio-style size46 positivo "></span>
+            </label>
+            <label class="t-opcoes" for="dois-quatro">
+              <input  
+              aria-label="I am not sure" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="dois-quatro" 
+              class="alt" 
+              name="alt2"  
+              type="radio" 
+              tabindex="0" 
+              value="0"  >
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="dois-cinco">
+              <input 
+              aria-label="I disagree" 
+              aria-busy="false" 
+              id="dois-cinco" 
+              class="alt" 
+              name="alt2" 
+              type="radio" 
+              tabindex="-1" 
+              value="1" >
+              <span class="radio-style size46 negativo" >  </span>
+            </label>
+            <label class="t-opcoes" for="dois-seis">
+              <input 
+              aria-label="I moderately disagree" 
+              aria-busy="false" 
+              id="dois-seis" 
+              class="alt" 
+              name="alt2" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="dois-sete">
+              <input  
+              aria-label="I strongly disagree" 
+              aria-busy="false" 
+              id="dois-sete" 
+              class="alt" 
+              name="alt2" 
+              type="radio" 
+              tabindex="-1" 
+              value="3"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question3" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Costumo ir a eventos, festas ou cursos, mesmo sem ter muita vontade, para agradar meu chefe meus amigos ou família. </h2>
+          </div>
+          <div class="options">
+          <div  class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="tres-um">
+              <input 
+              aria-label="I strongly agree" 
+              aria-busy="false" 
+              id="tres-um" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="-3" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="tres-dois">
+              <input 
+              aria-label="I moderately agree" 
+              aria-busy="false" 
+              id="tres-dois" 
+              class="alt" 
+              name="alt3"  
+              type="radio" 
+              tabindex="-1" 
+              value="-2" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="tres-tres">
+              <input 
+              aria-label="I agree" 
+              aria-busy="false" 
+              id="tres-tres" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="-1" >
+              <span class="radio-style size46 positivo "></span>
+            </label>
+            <label class="t-opcoes" for="tres-quatro">
+              <input  
+              aria-label="I am not sure" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="tres-quatro" 
+              class="alt" 
+              name="alt3"  
+              type="radio" 
+              tabindex="0" 
+              value="0"  >
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="tres-cinco">
+              <input 
+              aria-label="I disagree" 
+              aria-busy="false" 
+              id="tres-cinco" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="1" >
+              <span class="radio-style size46 negativo" >  </span>
+            </label>
+            <label class="t-opcoes" for="tres-seis">
+              <input 
+              aria-label="I moderately disagree" 
+              aria-busy="false" 
+              id="tres-seis" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="tres-sete">
+              <input  
+              aria-label="I strongly disagree" 
+              aria-busy="false" 
+              id="tres-sete" 
+              class="alt" 
+              name="alt3" 
+              type="radio" 
+              tabindex="-1" 
+              value="3"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question4" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Não consigo realizar tudo que me propus fazer no dia e preciso fazer hora extra e levar trabalho para casa  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="quatro-um">
+              <input 
+              aria-label="I strongly agree" 
+              aria-busy="false" 
+              id="quatro-um" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="-3" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="quatro-dois">
+              <input 
+              aria-label="I moderately agree" 
+              aria-busy="false" 
+              id="quatro-dois" 
+              class="alt" 
+              name="alt4"  
+              type="radio" 
+              tabindex="-1" 
+              value="-2" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="quatro-tres">
+              <input 
+              aria-label="I agree" 
+              aria-busy="false" 
+              id="quatro-tres" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="-1" >
+              <span class="radio-style size46 positivo "></span>
+            </label>
+            <label class="t-opcoes" for="quatro-quatro">
+              <input  
+              aria-label="I am not sure" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="quatro-quatro" 
+              class="alt" 
+              name="alt4"  
+              type="radio" 
+              tabindex="0" 
+              value="0"  >
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="quatro-cinco">
+              <input 
+              aria-label="I disagree" 
+              aria-busy="false" 
+              id="quatro-cinco" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="1" >
+              <span class="radio-style size46 negativo" >  </span>
+            </label>
+            <label class="t-opcoes" for="quatro-seis">
+              <input 
+              aria-label="I moderately disagree" 
+              aria-busy="false" 
+              id="quatro-seis" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1"
+               value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="quatro-sete">
+              <input  
+              aria-label="I strongly disagree" 
+              aria-busy="false" 
+              id="quatro-sete" 
+              class="alt" 
+              name="alt4" 
+              type="radio" 
+              tabindex="-1" 
+              value="3"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+      <div id="question5" class="swiper-slide conteudo">
+          <div class="pergunta">
+            <h2 class="text-pergunta"> Não consigo realizar tudo que me propus fazer no dia e preciso fazer hora extra e levar trabalho para casa  </h2>
+          </div>
+          <div class="options">
+          <div class="caption text--positivo">Sempre</div>
+          <div class="radios">
+            <label class="t-opcoes" for="cinco-um">
+              <input 
+              aria-label="I strongly agree" 
+              aria-busy="false" 
+              id="cinco-um" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="-3" >
+              <span class="radio-style size70 positivo "> </span>
+            </label>
+            <label class="t-opcoes" for="cinco-dois">
+              <input 
+              aria-label="I moderately agree" 
+              aria-busy="false" 
+              id="cinco-dois" 
+              class="alt" 
+              name="alt5"  
+              type="radio" 
+              tabindex="-1" 
+              value="-2" >
+              <span class="radio-style size56 positivo ">  </span>
+            </label>
+            <label class="t-opcoes" for="cinco-tres">
+              <input 
+              aria-label="I agree" 
+              aria-busy="false" 
+              id="cinco-tres" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="-1" >
+              <span class="radio-style size46 positivo "></span>
+            </label>
+            <label class="t-opcoes" for="cinco-quatro">
+              <input  
+              aria-label="I am not sure" 
+              aria-busy="false" 
+              data-focus-first="true" 
+              id="cinco-quatro" 
+              class="alt" 
+              name="alt5"  
+              type="radio" 
+              tabindex="0" 
+              value="0"  >
+              <span class="radio-style size36 neutro" >  </span>
+            </label>
+            <label class="t-opcoes" for="cinco-cinco">
+              <input 
+              aria-label="I disagree" 
+              aria-busy="false" 
+              id="cinco-cinco" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="1" >
+              <span class="radio-style size46 negativo" >  </span>
+            </label>
+            <label class="t-opcoes" for="cinco-seis">
+              <input 
+              aria-label="I moderately disagree" 
+              aria-busy="false" 
+              id="cinco-seis" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="2" >
+              <span class="radio-style size56 negativo" ></span>
+            </label>
+            <label class="t-opcoes" for="cinco-sete">
+              <input  
+              aria-label="I strongly disagree" 
+              aria-busy="false" 
+              id="cinco-sete" 
+              class="alt" 
+              name="alt5" 
+              type="radio" 
+              tabindex="-1" 
+              value="3"  
+              required="">
+              <span class="radio-style size70 negativo" > </span>
+            </label>
+          </div>
+          <div class="caption  text--negativo">Nunca</div>
+          <div class="mobile">
+            <div class="caption-mobile text--positivo">
+            Sempre</div>
+            <div class="caption-mobile  text--negativo">
+            Nunca</div>
+          </div>
+          </div>
+      </div>
+    </form>
+
+
+    <div class="group-btt">
+      <button class="swiper-button-prev btt "><span>Voltar</span>
+      </button>
+      <button class="swiper-button-next btt ">Pular
+      </button>
+      <a href="resultado.html" class="result disagree"><input  type="button" id="btn" value="Resultado" class="btt "></a>
+     
+    </div>
+    
+    </button>
+    <div class="swiper-pagination "></div>
+    </div>
+   </div>
+ </div>
+
+ 
+</div>
+ <script src="assets/script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
